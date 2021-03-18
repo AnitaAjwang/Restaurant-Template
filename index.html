@@ -52,7 +52,7 @@
                     <p>WELCOME TO THE RESTAURANT</p>
                     <div class="home-buttons">
                         <a href="#" class="home-button"><span>Order Now</span></a>
-                        <a href="#" class="home-button"><span>Reserve A Table</span></a>
+                        <a href="#reservation" class="home-button"><span>Reserve A Table</span></a>
                     </div>
     
                 </div>
@@ -126,6 +126,77 @@
           </div>
         </section>
         <!--About Section End-->
+        <!--Reservation Start-->
+        <section id="reservation">
+          <div class="container justify-content-center">
+            <h1 class="heading-sm text-center">Make A Reservation</h1>
+            <!--form start-->
+            <form>
+            <div class="row g-2">
+              <div class="form-floating mb-3 col">
+                <input type="text" class="form-control" id="floatingInput" placeholder="first name">
+                <label for="floatingInput"> First Name</label>
+              </div>
+              <div class="form-floating mb-3 col">
+                <input type="text" class="form-control" id="floatingInput" placeholder="last name">
+                <label for="floatingInput"> Last Name</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="07123456789">
+              <label for="floatingInput">Phone Number</label>
+            </div>
+            <div class="row g-2">
+              <div class="form-floating mb-3 col">
+                <input type="date" class="form-control" id="floatingInput" placeholder="01/20/2021">
+                <label for="floatingInput">Date</label>
+              </div>
+              <div class="form-floating mb-3 col">
+                <input type="time" class="form-control" id="floatingInput" placeholder="1.00">
+                <label for="floatingInput">Time</label>
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="1">
+              <label for="floatingInput">Number of Guests</label>
+            </div>
+            <div class="row g-2">
+              <div class="form-floating mb-3 col">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Please Select</option>
+                  <option value="1">Normal Meal</option>
+                  <option value="2">Dinner</option>
+                  <option value="3">Corporate</option>
+                  <option value="4">Private</option>
+                  <option value="5">Birthday/Anniversary</option>
+                  <option value="6">Other</option>
+                </select>
+                <label for="floatingSelect">Reservation Type</label>
+              </div>
+              <div class="form-floating mb-3 col">
+                <input type="text" class="form-control" id="floatingInput" placeholder="text">
+                <label for="floatingInput">If Other, Kindly Specify</label>
+              </div>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="text">
+              <label for="floatingInput">Any Special Request</label>
+            </div>
+            <div class="">
+              <button type="submit" class="reservation-button">Book Now</button>
+            </div>
+          </form>
+            <!--form end-->
+          </div>
+        </section>
+        <!--Reservation End-->
+
+        <!--Location Section-->
         <section id="location">
           <div class="container justify-content-center">
             <h1 class="heading-sm text-center">Find Us</h1>
