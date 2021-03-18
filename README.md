@@ -1,7 +1,7 @@
 # Restaurant-Template
 This a responsive restaurant website template
 
-## Screenshots
+## Sample Screenshots
 ![](images/restaurant-desktop.PNG)
 ![](images/restaurant-mobile2.PNG)
 
