@@ -1,0 +1,89 @@
+#menu{
+    position: relative;
+}
+.menus{
+    &-heading{
+        color: $secondary-color;
+        font-family: $Lobster;
+    }
+    &-circle{
+        &-btm{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: $secondary-color; 
+        }
+        &-top{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $secondary-color; 
+        }
+
+    }
+    &-image{
+        object-fit: contain;
+        position: relative;
+        height: 90vh;   
+    }
+    &-image:hover{
+        cursor: pointer;
+        z-index: 1;
+        @include easeOut;
+    }
+
+}
+.circle{
+    &-btm-left{
+        clip-path: circle(10% at 0 100%);
+    }
+    &-btm-right{
+        clip-path: circle(10% at 100% 100%);
+
+    }
+    &-top-right{
+        clip-path: circle(10% at 100% 0%);
+    }
+    &-top-left{
+        clip-path: circle(10% at 0% 0%);
+
+    }
+
+}
+.owl{
+    &-dots{
+    span{
+    width: 20px !important;
+    height: 20px !important;
+    }
+    button{
+        border: none !important;
+        outline: none !important;
+    }
+}
+    &-nav{
+        button{
+        border: none !important;
+        outline: none !important;
+        background: none !important;
+        }
+
+    }
+    &-next,&-prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $secondary-color !important;
+        font-size: 60px !important;
+        font-weight: bolder !important;
+    }
+    &-prev{
+        left: 1%;
+    }
+    &-next{
+        right: 1%;
+    }
+  
+}
